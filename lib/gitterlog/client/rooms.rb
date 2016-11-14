@@ -4,8 +4,7 @@ module GitterLog
     module Rooms
 
       def rooms(options = {})
-        response = self.class.get("/rooms", { query: options })
-        response.parsed_response
+        get("/rooms", options)
       end
 
     end
