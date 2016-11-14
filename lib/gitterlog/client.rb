@@ -1,10 +1,14 @@
+require "gitterlog/client/connection"
 require "gitterlog/client/rooms"
+require "gitterlog/client/messages"
 
 module GitterLog
 
   class Client
     include HTTParty
+    include GitterLog::Client::Connection
     include GitterLog::Client::Rooms
+    include GitterLog::Client::Messages
 
     base_uri "https://api.gitter.im/v1"
     format :json
