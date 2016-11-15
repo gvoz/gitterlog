@@ -1,6 +1,6 @@
 # Gitter ruby log
 
-Client library for saving messages to [Gitter](https://developer.gitter.im/docs).
+Client library for saving messages from [Gitter](https://gitter.im) use [Gitter API](https://developer.gitter.im/docs).
 
 ## Usage
 
