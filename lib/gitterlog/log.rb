@@ -12,10 +12,17 @@ module GitterLog
         Dir.mkdir("logs")
       end
       @client = client
+    end
+
+    def log_room(roomId)
+      @all_messages = []
+      get_room_messages(roomId)
+      save_files(roomId)
+    end
+
+    def log_rooms
       @client.rooms.each do |x|
-        @all_messages = []
-        get_room_messages(x["id"])
-        save_files(x["id"])
+        log_room(x["id"])
       end
     end
 
