@@ -7,6 +7,10 @@ module GitterLog
         get("/rooms/#{roomId}/chatMessages", options)
       end
 
+      def create_message(roomId, options = {})
+        post("/rooms/#{roomId}/chatMessages", options)
+      end
+
     end
 
   end
