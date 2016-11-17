@@ -1,5 +1,5 @@
 # Gitter ruby log
-
+[![Build Status](https://travis-ci.org/gvoz/gitterlog.svg)](https://travis-ci.org/gvoz/gitterlog)
 Client library for saving messages from [Gitter](https://gitter.im) use [Gitter API](https://developer.gitter.im/docs).
 
 ## Usage

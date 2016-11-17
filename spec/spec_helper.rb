@@ -1,2 +1,5 @@
-$LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
-require "gitterlog"
+require_relative '../lib/gitterlog'
+
+RSpec.configure do |config|
+
+end
